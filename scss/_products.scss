@@ -1,0 +1,93 @@
+.products{
+    width: 100%;
+    .container{
+        background-image: url("../img/our_collection.png");
+        background-repeat: no-repeat;
+        padding-top: 130px;
+        background-position: 50% 0;
+        
+        .products__cards{
+            width: 92%;
+            margin: 0 auto;
+            display: flex;  
+            flex-wrap: wrap;
+            justify-content: space-evenly;    
+            
+            .products__card{
+                width: 255px;
+                margin-bottom: 100px;
+               
+                img{
+                    margin-bottom:71px;
+                }
+                .product__cards__card__texts{
+                    
+                    h2{
+                        text-align: center;
+                        font-family: 'Fraunces';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 24px;
+                        color: #333D4B;
+                        margin-bottom:10%;
+                    }
+                    p{
+                        text-align: center;
+                        font-family: 'Barlow';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        color: #333D4B;
+                    }
+                }
+                
+            }
+        }
+        
+        
+    } 
+}
+@media only screen and (max-width:800px) and (min-width:424px){
+    .products{
+        .container{
+            .products__cards{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                .products__card{
+                    width: 90%; 
+                    height:193px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    img{
+                        width: 45%;
+                        height:100%;
+                    }
+                    .product__cards__card__texts{
+                        width: 55%;
+                        height:80%;
+                        margin-top: 4%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        h2{
+                            width: 100%;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:424px){
+    .products{
+        .container{
+            .products__cards{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+}
